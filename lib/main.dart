@@ -1,6 +1,3 @@
-import 'package:education_app/model/subject.dart';
-import 'package:education_app/services/subject_service.dart';
-import 'package:education_app/views/chapter_view.dart';
 import 'package:education_app/views/subject_view.dart';
 import 'package:flutter/material.dart';
 

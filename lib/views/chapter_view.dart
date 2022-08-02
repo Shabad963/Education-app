@@ -38,7 +38,7 @@ class _ChapterViewState extends State<ChapterView> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Align(
@@ -52,16 +52,16 @@ class _ChapterViewState extends State<ChapterView> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
-          Center(
+          const Center(
             child: Text(
               'Chapters',
               style: TextStyle(fontSize: 30),
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           DefaultTabController(
               length: 3, // length of tabs
               initialIndex: 0,
@@ -69,7 +69,7 @@ class _ChapterViewState extends State<ChapterView> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     Container(
-                      child: TabBar(
+                      child: const TabBar(
                         labelColor: Colors.black,
                         unselectedLabelColor: Colors.grey,
                         tabs: [
@@ -81,7 +81,7 @@ class _ChapterViewState extends State<ChapterView> {
                     ),
                     Container(
                         height: 400, //height of TabBarView
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             border: Border(
                                 top: BorderSide(
                                     color: Colors.grey, width: 0.5))),

@@ -14,7 +14,7 @@ class _SubjectViewState extends State<SubjectView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [
+      body: Column(children: const [
         SizedBox(
           height: 150,
         ),
@@ -87,10 +87,11 @@ class _SubjectTileState extends State<SubjectTile> {
                 );
               },
               child: Card(
+                elevation: 10,
                 shadowColor: Colors.black,
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
-                  side: BorderSide(color: Colors.white70, width: 1),
+                  side: const BorderSide(color: Colors.white70, width: 1),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Container(
@@ -125,7 +126,7 @@ class _SubjectTileState extends State<SubjectTile> {
               ),
             );
           },
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
             childAspectRatio: 1 / 1.4,
             crossAxisSpacing: 5,
