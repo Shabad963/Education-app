@@ -1,4 +1,4 @@
-import 'package:education_app/views/subject_view.dart';
+import 'package:education_app/views/product_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SubjectView(),
+      home: HomePage(),
     );
   }
 }
